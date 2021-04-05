@@ -1,0 +1,173 @@
+:root {
+  --white07: rgb(255, 255, 255, 0.7);
+  --white10: rgb(255, 255, 255);
+  --black05: rgba(0,0,0,.5);
+  --black10: rgba(0,0,0);
+  --logo-bg: #564d55;
+}
+
+/* header start */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black05);
+}
+
+header a {
+  color: var(--white07);
+  font-family: var(--font);
+  text-transform: uppercase;
+}
+
+.header-container {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* logo start */
+.logo {
+  flex: 0 0 8%;
+}
+
+.lg-top {
+  display: flex;
+  height: 100%;
+  background-color: var(--logo-bg);
+
+}
+
+.lg-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lg-top > a > img {
+  height: 40%;
+  width: 80%;
+}
+
+.lg-bottom {
+  display: flex;
+  background-color: var(--black10);
+  color: var(--white10);
+  padding: 5px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-bottom span {
+  font-size: 8px;
+}
+/* logo end */
+
+/* nav start */
+.header-container > nav {
+  flex: 0 0 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--white07);
+}
+
+.nav-top-left > ul{
+  display: flex;
+}
+
+.nav-top-left > ul > li {
+  padding: 0 15px;
+}
+
+.nav-top-left > ul > li > a {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.nav-top-right {
+  display: flex;
+}
+
+.nav-top-right i {
+  font-size: 22px;
+  padding: 0 8px;
+  color: var(--white07);
+}
+
+#hidepc {
+  display: none;
+}
+
+.nav-bottom {
+  padding: 10px 0;
+}
+
+.nav-bottom > ul {
+  display: flex;
+}
+
+.nav-bottom > ul > li {
+  padding: 0 12px;
+}
+
+.nav-bottom > ul > li > a {
+  padding: 4px;
+  font-size: 13px;
+}
+/* nav end */
+/* header end */
+
+/* responsive header */
+@media screen and (max-width: 1025px) {
+  header {
+    width: 100%;
+  }
+  
+  .header-container {
+    width: 100%;
+  }
+
+  .header-container > nav {
+    flex: 0 0 80%;
+  }
+
+  .nav-top-left {
+    display: none;
+  }
+
+  .nav-bottom {
+    display: none;
+  }
+
+  #hidepc {
+    display: block;
+  }
+
+  .nav-top {
+    border: 0px;
+    padding: 15px 0;
+    flex-direction: row-reverse ;
+  }
+  
+  .logo {
+    flex: 0 0 10%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    flex: 0 0 15%;
+  }
+
+  .header-container > nav {
+    flex: 0 0 78%;
+  }
+  
+}
+

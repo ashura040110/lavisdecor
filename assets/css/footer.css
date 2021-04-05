@@ -1,0 +1,40 @@
+:root {
+    --black10: rgb(0, 0, 0);
+    --white10: rgb(255, 255, 255);
+    --white07: rgb(255, 255, 255, 0.7);
+    --lightpurple: #564d55;
+
+}
+
+footer {
+    width: 100%;
+    border-top: 5px solid var(--lightpurple);
+    background-color: var(--black10);
+    color: var(--white07);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+footer h3 {
+    color: var(--white10);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-container {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-block-start: 60px;
+    padding-block-end: 100px;
+}
+
+.footer-container-left {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 50%;
+}
+
+
