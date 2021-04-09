@@ -1,5 +1,5 @@
 :root {
-  --white07: rgb(255, 255, 255, 0.7);
+  --white05: rgb(255, 255, 255, 0.5);
   --white10: rgb(255, 255, 255);
   --black05: rgba(0,0,0,.5);
   --black10: rgba(0,0,0);
@@ -14,7 +14,7 @@ header {
 }
 
 header a {
-  color: var(--white07);
+  color: var(--white05);
   font-family: var(--font);
   text-transform: uppercase;
 }
@@ -73,7 +73,7 @@ header a {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
-  border-bottom: 1px solid var(--white07);
+  border-bottom: 1px solid var(--white05);
 }
 
 .nav-top-left > ul{
@@ -96,7 +96,7 @@ header a {
 .nav-top-right i {
   font-size: 22px;
   padding: 0 8px;
-  color: var(--white07);
+  color: var(--white05);
 }
 
 #hidepc {

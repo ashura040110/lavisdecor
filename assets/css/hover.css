@@ -1,0 +1,37 @@
+:root {
+  --white10: rgb(255, 255, 255);
+  --icon-hover: #c09256;
+  --lightpurple: #564d55;
+  --black10: rgb(0, 0, 0);
+}
+
+li > a:hover {
+  color: var(--white10);
+}
+
+header i:hover {
+  color: var(--icon-hover);
+}
+
+.styletools-container > a:hover {
+  background-color: var(--white10);
+  color: var(--black10);
+}
+
+.trending-button a:hover {
+  background-color: var(--lightpurple);
+  color: var(--white10);
+}
+
+.promotion-container-button > a:hover {
+  background-color: var(--lightpurple);
+  border: 0;
+}
+
+.footer-container-right-bot-social i:hover {
+  color: var(--white10);
+}
+
+#outro-hover:hover {
+  color: var(--white10);
+}
